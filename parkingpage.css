@@ -1,0 +1,71 @@
+body {
+    background-color: transparent;
+    margin: 0;
+
+}
+
+
+img {
+    background-color: transparent;
+}
+
+.block {
+    background-image: url('./assets/Untitled-1\ copy.jpg');
+    background-size: 100% auto;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: ccmonstermashworn, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 7vw;
+}
+
+#title {
+    animation-name: beam-down;
+    animation-duration: 10s;
+    font-size: 4rem;
+    color: rgba(221, 169, 148, 1.0)
+}
+
+#flying-saucer {
+    width: auto;
+    position: fixed;
+    top: 5%;
+    height: 25%;
+    left: 30%;
+    animation-name: saucer;
+    animation-duration: 10s;
+}
+
+@keyframes saucer {
+    0% {
+        left:-10%;
+    }
+
+    100% {
+        position:fixed;
+
+    }
+}
+
+@keyframes beam-down {
+    0% {
+        transform: translateY(-100vh);
+        color: rgba(221, 169, 148, 0.0)
+    }
+    50% {
+        transform: translateY(-50vh);
+        color: rgba(221, 169, 148, 0.0)
+
+    }
+    65%{
+        color: rgba(221, 169, 148, 0.0)
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,16 @@
+body {
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    width:100vw;
+    overflow: hidden;
+}
+
+
+
+#logo {
+    height: 100vh;
+    width: auto;
+    overflow: hidden;
+}
